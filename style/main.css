@@ -62,6 +62,7 @@ h4 {
 
 
 
+
 /* Ingredients Key */
 
 .key {
@@ -189,8 +190,638 @@ h4 {
 
 
 
+
+/* Drinks */
+
+.affogato-drink {
+	display: none
+}
+
+.affogato-info {
+	display: none;
+	background-color: #D6F2FF;
+	width: 50vw;
+  	height: 100vh;
+  	text-align: center;
+  	z-index: 110;
+}
+
+.americano-drink {
+	display: none
+}
+
+.americano-info {
+	display: none;
+	background-color: #D6F2FF;
+	width: 50vw;
+  	height: 100vh;
+  	text-align: center;
+  	z-index: 110;
+}
+
+.breve-drink {
+	display: none
+}
+
+.breve-info {
+	display: none;
+	background-color: #D6F2FF;
+	width: 50vw;
+  	height: 100vh;
+  	text-align: center;
+  	z-index: 110;
+}
+
+.cappuccino-drink {
+	display: none
+}
+
+.cappuccino-info {
+	display: none;
+	background-color: #D6F2FF;
+	width: 50vw;
+  	height: 100vh;
+  	text-align: center;
+  	z-index: 110;
+}
+
+.cortado-drink {
+	display: none
+}
+
+.cortado-info {
+	display: none;
+	background-color: #D6F2FF;
+	width: 50vw;
+  	height: 100vh;
+  	text-align: center;
+  	z-index: 110;
+}
+
+.expresso-drink {
+	display: none
+}
+
+.expresso-info {
+	display: none;
+	background-color: #D6F2FF;
+	width: 50vw;
+  	height: 100vh;
+  	text-align: center;
+  	z-index: 110;
+}
+
+
+
+
+/* General */
+
+.info-text {
+	margin: auto;
+    position: absolute;
+  	padding-left: 10%;
+    padding-right: 10%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.intro {
+	display: none;
+}
+
+.intro-headline {
+	padding-bottom: 8vh;
+}
+
+.intro-line {
+	width: 10%;
+	margin: auto;
+}
+
+.intro-description {
+}
+
+.container {
+	width: 100%;
+	overflow: hidden;
+}
+
+.breakdown-block {
+	width: 50%;
+	background-color: #D6F2FF; 
+  	height: 100vh;
+  	vertical-align: top;
+  	display: inline-block;
+  	position: relative;
+}
+
+.list-block {
+	width: 35%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	background-color: #C99B72; 
+  	display: inline-block;
+  	overflow: auto;
+  	height: 100vh;
+  	bottom: 0;
+}
+
+.dark-text {
+	color: #331D0A;
+}
+
+.medium-text {
+	color: #C99B72;
+}
+
+.border-box{
+	box-sizing: border-box;
+}
+
+
+
+
+/* Custom Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #EDD9B7; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #331D0A; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #110901; 
+}
+
+
+
+
 /* Drink Layers */
 
+/* Expresso */
+
+#expresso-layer-20 {
+	position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+	z-index: 90;
+}
+
+#expresso-layer-20 .expressoTwentyFill {
+    animation-name: expressoTwentyFill;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+	z-index: 90;
+}
+
+@keyframes expressoTwentyFill {
+    0% {
+        transform: translate(0, 100vh);
+    }
+    100% {
+        transform: translate(0, 70vh);
+    }
+}
+
+#expresso-layer-20 #expressoTwentyWave {
+    animation-name: expressoTwentyWave;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.4s;
+    width: 100vw;
+    height: 100vh;
+    fill: #331D0A;
+	z-index: 90;
+}
+
+@keyframes expressoTwentyWave {
+    0% {
+        transform: translate(-150px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#expresso-layer-40 {
+	position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+	z-index: 90;
+}
+
+#expresso-layer-40 .expressoFortyFill {
+    animation-name: expressoFortyFill;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+	z-index: 90;
+}
+
+@keyframes expressoFortyFill {
+    0% {
+        transform: translate(0, 100vh);
+    }
+    100% {
+        transform: translate(0, 40vh);
+    }
+}
+
+#expresso-layer-40 #expressoFortyWave {
+    animation-name: expressoFortyWave;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.4s;
+    width: 100vw;
+    height: 100vh;
+    fill: #331D0A;
+	z-index: 90;
+}
+
+@keyframes expressoFortyWave {
+    0% {
+        transform: translate(-150px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+/* Ice Cream */
+
+#ice-cream-layer-10 {
+	position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+	z-index: 105;
+}
+
+#ice-cream-layer-10 .iceCreamTenFill {
+    animation-name: iceCreamTenFill;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+	z-index: 105;
+}
+
+@keyframes iceCreamTenFill {
+    0% {
+        transform: translate(0, 100vh);
+    }
+    100% {
+        transform: translate(0, 80vh);
+    }
+}
+
+#ice-cream-layer-10 #iceCreamTenWave {
+    animation-name: iceCreamTenWave;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    width: 100vw;
+    height: 100vh;
+    fill: #FFE782;
+	z-index: 105;
+}
+
+@keyframes iceCreamTenWave {
+    0% {
+        transform: translate(-150px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+/* Hot Water */
+
+#hot-water-layer-80 {
+	position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+	z-index: 20;
+}
+
+#hot-water-layer-80 .hotWaterEightyFill {
+    animation-name: hotWaterEightyFill;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+	z-index: 20;
+}
+
+@keyframes hotWaterEightyFill {
+    0% {
+        transform: translate(0, 100vh);
+    }
+    100% {
+        transform: translate(0, 20vh);
+    }
+}
+
+#hot-water-layer-80 #hotWaterEightyWave {
+    animation-name: hotWaterEightyWave;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    width: 100vw;
+    height: 100vh;
+    fill: #8DDBFF;
+	z-index: 20;
+}
+
+@keyframes hotWaterEightyWave {
+    0% {
+        transform: translate(-150px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+/* Steamed Milk */
+
+#steamed-milk-layer-30 {
+	position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+	z-index: 60;
+}
+
+#steamed-milk-layer-30 .steamedMilkThirtyFill {
+    animation-name: steamedMilkThirtyFill;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+	z-index: 60;
+}
+
+@keyframes steamedMilkThirtyFill {
+    0% {
+        transform: translate(0, 100vh);
+    }
+    100% {
+        transform: translate(0, 50vh);
+    }
+}
+
+#steamed-milk-layer-30 #steamedMilkThirtyWave {
+    animation-name: steamedMilkThirtyWave;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.6s;
+    width: 100vw;
+    height: 100vh;
+    fill: #EDD9B7;
+	z-index: 60;
+}
+
+@keyframes steamedMilkThirtyWave {
+    0% {
+        transform: translate(-150px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+/* Cream */
+
+#cream-layer-40 {
+	position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+	z-index: 40;
+}
+
+#cream-layer-40 .creamFortyFill {
+    animation-name: creamFortyFill;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+	z-index: 40;
+}
+
+@keyframes creamFortyFill {
+    0% {
+        transform: translate(0, 100vh);
+    }
+    100% {
+        transform: translate(0, 30vh);
+    }
+}
+
+#cream-layer-40 #creamFortyWave {
+    animation-name: creamFortyWave;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.35s;
+    width: 100vw;
+    height: 100vh;
+    fill: #FCE4A7;
+	z-index: 40;
+}
+
+@keyframes creamFortyWave {
+    0% {
+        transform: translate(-150px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+/* Milk Foam */
+
+#milk-foam-layer-30 {
+	position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+	z-index: 20;
+}
+
+#milk-foam-layer-30 .milkFoamThirtyFill {
+    animation-name: milkFoamThirtyFill;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+	z-index: 20;
+}
+
+@keyframes milkFoamThirtyFill {
+    0% {
+        transform: translate(0, 100vh);
+    }
+    100% {
+        transform: translate(0, 60vh);
+    }
+}
+
+#milk-foam-layer-30 #milkFoamThirtyWave {
+    animation-name: milkFoamThirtyWave;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    width: 100vw;
+    height: 100vh;
+    fill: #FFF1DA;
+	z-index: 20;
+}
+
+@keyframes milkFoamThirtyWave {
+    0% {
+        transform: translate(-150px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+#milk-foam-layer-60 {
+	position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+	z-index: 20;
+}
+
+#milk-foam-layer-60 .milkFoamSixtyFill {
+    animation-name: milkFoamSixtyFill;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+	z-index: 20;
+}
+
+@keyframes milkFoamSixtyFill {
+    0% {
+        transform: translate(0, 100vh);
+    }
+    100% {
+        transform: translate(0, 30vh);
+    }
+}
+
+#milk-foam-layer-60 #milkFoamSixtyWave {
+    animation-name: milkFoamSixtyWave;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    width: 100vw;
+    height: 100vh;
+    fill: #FFF1DA;
+	z-index: 20;
+}
+
+@keyframes milkFoamSixtyWave {
+    0% {
+        transform: translate(-150px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Drink Layers - OLD */
+
+/*
 .chocolate-layer-20 {
 	background-color: #110901;
 	bottom: 0;
@@ -487,596 +1118,4 @@ h4 {
 	position: absolute;
 	z-index: 1;
 }
-
-
-
-/* Drinks */
-
-.affogato-drink {
-	display: none
-}
-
-.affogato-info {
-	display: none;
-	background-color: #D6F2FF;
-	width: 50vw;
-  	height: 100vh;
-  	text-align: center;
-  	z-index: 110;
-}
-
-.americano-drink {
-	display: none
-}
-
-.americano-info {
-	display: none;
-	background-color: #D6F2FF;
-	width: 50vw;
-  	height: 100vh;
-  	text-align: center;
-  	z-index: 110;
-}
-
-.breve-drink {
-	display: none
-}
-
-.breve-info {
-	display: none;
-	background-color: #D6F2FF;
-	width: 50vw;
-  	height: 100vh;
-  	text-align: center;
-  	z-index: 110;
-}
-
-.cappuccino-drink {
-	display: none
-}
-
-.cappuccino-info {
-	display: none;
-	background-color: #D6F2FF;
-	width: 50vw;
-  	height: 100vh;
-  	text-align: center;
-  	z-index: 110;
-}
-
-.cortado-drink {
-	display: none
-}
-
-.cortado-info {
-	display: none;
-	background-color: #D6F2FF;
-	width: 50vw;
-  	height: 100vh;
-  	text-align: center;
-  	z-index: 110;
-}
-
-.expresso-drink {
-	display: none
-}
-
-.expresso-info {
-	display: none;
-	background-color: #D6F2FF;
-	width: 50vw;
-  	height: 100vh;
-  	text-align: center;
-  	z-index: 110;
-}
-
-
-
-/* General */
-
-.info-text {
-	margin: auto;
-    position: absolute;
-  	padding-left: 10%;
-    padding-right: 10%;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-
-}
-
-.intro {
-	display: none;
-}
-
-.intro-headline {
-	padding-bottom: 8vh;
-}
-
-.intro-line {
-	width: 10%;
-	margin: auto;
-}
-
-.intro-description {
-}
-
-.container {
-	width: 100%;
-	overflow: hidden;
-}
-
-.breakdown-block {
-	width: 50%;
-	background-color: #D6F2FF; 
-  	height: 100vh;
-  	vertical-align: top;
-  	display: inline-block;
-  	position: relative;
-}
-
-.list-block {
-	width: 35%;
-	padding-left: 2.5%;
-	padding-right: 2.5%;
-	background-color: #C99B72; 
-  	display: inline-block;
-  	overflow: auto;
-  	height: 100vh;
-  	bottom: 0;
-}
-
-.dark-text {
-	color: #331D0A;
-}
-
-.medium-text {
-	color: #C99B72;
-}
-
-.border-box{
-	box-sizing: border-box;
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #EDD9B7; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #331D0A; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #110901; 
-}
-
-
-
-
-
-/* Expresso Layers */
-
-#expresso-layer-20 {
-	position: absolute;
-    width: 50vw;
-    height: 100vh;
-    background: transparent;
-    overflow: hidden;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
-	z-index: 90;
-}
-
-#expresso-layer-20 .expressoTwentyFill {
-    animation-name: expressoTwentyFill;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-	z-index: 90;
-}
-
-@keyframes expressoTwentyFill {
-    0% {
-        transform: translate(0, 100vh);
-    }
-    100% {
-        transform: translate(0, 70vh);
-    }
-}
-
-#expresso-layer-20 #expressoTwentyWave {
-    animation-name: expressoTwentyWave;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 0.4s;
-    width: 100vw;
-    height: 100vh;
-    fill: #331D0A;
-	z-index: 90;
-}
-
-@keyframes expressoTwentyWave {
-    0% {
-        transform: translate(-150px, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-
-
-#expresso-layer-40 {
-	position: absolute;
-    width: 50vw;
-    height: 100vh;
-    background: transparent;
-    overflow: hidden;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
-	z-index: 90;
-}
-
-#expresso-layer-40 .expressoFortyFill {
-    animation-name: expressoFortyFill;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-	z-index: 90;
-}
-
-@keyframes expressoFortyFill {
-    0% {
-        transform: translate(0, 100vh);
-    }
-    100% {
-        transform: translate(0, 40vh);
-    }
-}
-
-#expresso-layer-40 #expressoFortyWave {
-    animation-name: expressoFortyWave;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 0.4s;
-    width: 100vw;
-    height: 100vh;
-    fill: #331D0A;
-	z-index: 90;
-}
-
-@keyframes expressoFortyWave {
-    0% {
-        transform: translate(-150px, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-
-
-/* Ice Cream Layers */
-
-#ice-cream-layer-10 {
-	position: absolute;
-    width: 50vw;
-    height: 100vh;
-    background: transparent;
-    overflow: hidden;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
-	z-index: 105;
-}
-
-#ice-cream-layer-10 .iceCreamTenFill {
-    animation-name: iceCreamTenFill;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-	z-index: 105;
-}
-
-@keyframes iceCreamTenFill {
-    0% {
-        transform: translate(0, 100vh);
-    }
-    100% {
-        transform: translate(0, 80vh);
-    }
-}
-
-#ice-cream-layer-10 #iceCreamTenWave {
-    animation-name: iceCreamTenWave;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 0.5s;
-    width: 100vw;
-    height: 100vh;
-    fill: #FFE782;
-	z-index: 105;
-}
-
-@keyframes iceCreamTenWave {
-    0% {
-        transform: translate(-150px, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-
-
-/* Hot Water Layers */
-
-#hot-water-layer-80 {
-	position: absolute;
-    width: 50vw;
-    height: 100vh;
-    background: transparent;
-    overflow: hidden;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
-	z-index: 20;
-}
-
-#hot-water-layer-80 .hotWaterEightyFill {
-    animation-name: hotWaterEightyFill;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-	z-index: 20;
-}
-
-@keyframes hotWaterEightyFill {
-    0% {
-        transform: translate(0, 100vh);
-    }
-    100% {
-        transform: translate(0, 20vh);
-    }
-}
-
-#hot-water-layer-80 #hotWaterEightyWave {
-    animation-name: hotWaterEightyWave;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 0.5s;
-    width: 100vw;
-    height: 100vh;
-    fill: #8DDBFF;
-	z-index: 20;
-}
-
-@keyframes hotWaterEightyWave {
-    0% {
-        transform: translate(-150px, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-
-
-/* Steamed Milk Layers */
-
-#steamed-milk-layer-30 {
-	position: absolute;
-    width: 50vw;
-    height: 100vh;
-    background: transparent;
-    overflow: hidden;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
-	z-index: 60;
-}
-
-#steamed-milk-layer-30 .steamedMilkThirtyFill {
-    animation-name: steamedMilkThirtyFill;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-	z-index: 60;
-}
-
-@keyframes steamedMilkThirtyFill {
-    0% {
-        transform: translate(0, 100vh);
-    }
-    100% {
-        transform: translate(0, 50vh);
-    }
-}
-
-#steamed-milk-layer-30 #steamedMilkThirtyWave {
-    animation-name: steamedMilkThirtyWave;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 0.6s;
-    width: 100vw;
-    height: 100vh;
-    fill: #EDD9B7;
-	z-index: 60;
-}
-
-@keyframes steamedMilkThirtyWave {
-    0% {
-        transform: translate(-150px, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-
-
-/* Cream Layers */
-
-#cream-layer-40 {
-	position: absolute;
-    width: 50vw;
-    height: 100vh;
-    background: transparent;
-    overflow: hidden;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
-	z-index: 40;
-}
-
-#cream-layer-40 .creamFortyFill {
-    animation-name: creamFortyFill;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-	z-index: 40;
-}
-
-@keyframes creamFortyFill {
-    0% {
-        transform: translate(0, 100vh);
-    }
-    100% {
-        transform: translate(0, 30vh);
-    }
-}
-
-#cream-layer-40 #creamFortyWave {
-    animation-name: creamFortyWave;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 0.35s;
-    width: 100vw;
-    height: 100vh;
-    fill: #FCE4A7;
-	z-index: 40;
-}
-
-@keyframes creamFortyWave {
-    0% {
-        transform: translate(-150px, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-
-
-/* Milk Foam Layers */
-
-#milk-foam-layer-30 {
-	position: absolute;
-    width: 50vw;
-    height: 100vh;
-    background: transparent;
-    overflow: hidden;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
-	z-index: 20;
-}
-
-#milk-foam-layer-30 .milkFoamThirtyFill {
-    animation-name: milkFoamThirtyFill;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-	z-index: 20;
-}
-
-@keyframes milkFoamThirtyFill {
-    0% {
-        transform: translate(0, 100vh);
-    }
-    100% {
-        transform: translate(0, 60vh);
-    }
-}
-
-#milk-foam-layer-30 #milkFoamThirtyWave {
-    animation-name: milkFoamThirtyWave;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 0.5s;
-    width: 100vw;
-    height: 100vh;
-    fill: #FFF1DA;
-	z-index: 20;
-}
-
-@keyframes milkFoamThirtyWave {
-    0% {
-        transform: translate(-150px, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-
-
-#milk-foam-layer-60 {
-	position: absolute;
-    width: 50vw;
-    height: 100vh;
-    background: transparent;
-    overflow: hidden;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
-	z-index: 20;
-}
-
-#milk-foam-layer-60 .milkFoamSixtyFill {
-    animation-name: milkFoamSixtyFill;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(.2, .6, .6, .2);
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-	z-index: 20;
-}
-
-@keyframes milkFoamSixtyFill {
-    0% {
-        transform: translate(0, 100vh);
-    }
-    100% {
-        transform: translate(0, 30vh);
-    }
-}
-
-#milk-foam-layer-60 #milkFoamSixtyWave {
-    animation-name: milkFoamSixtyWave;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 0.5s;
-    width: 100vw;
-    height: 100vh;
-    fill: #FFF1DA;
-	z-index: 20;
-}
-
-@keyframes milkFoamSixtyWave {
-    0% {
-        transform: translate(-150px, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
+*/
